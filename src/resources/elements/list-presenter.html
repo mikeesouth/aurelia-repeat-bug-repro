@@ -1,0 +1,13 @@
+<template>
+  <h2>The list</h2>
+
+  <i if.bind="list.length === 0">
+    The list is empty
+  </i>
+
+  <ul>
+    <li repeat.for="item of list">
+      ${item}
+    </li>
+  </ul>
+</template>
